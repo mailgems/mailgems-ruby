@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mailgems/mailgems-ruby.svg?branch=master)](https://travis-ci.org/mailgems/mailgems-ruby)
+[![Build Status](https://travis-ci.org/mailgems/mailgems-ruby.svg?branch=master)](https://travis-ci.org/mailgems/mailgems-ruby) [![Coverage Status](https://coveralls.io/repos/github/mailgems/mailgems-ruby/badge.svg)](https://coveralls.io/github/mailgems/mailgems-ruby)
 
 # Mailgems
 
