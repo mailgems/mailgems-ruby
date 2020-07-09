@@ -30,17 +30,15 @@ mg_client = Mailgun::Mail.new(api_key: 'your-api-key')
 
 # Define your mail parameters
 mail_params = {
-                from_email: 'foo@sending_domain.com',
-                from_name: 'Foo',
-                recipients: [{
-									email: 'receiver@example.com',
-									attributes: {
-										name: 'Receiver'
-									}
-								}],
-                subject: 'The Mailgems Ruby SDK is awesome!',
-                content: 'Hi {{name}}, It is really easy to send an email!'
-            	}
+	from_email: 'foo@sending_domain.com',
+	from_name: 'Foo',
+	recipients: [{
+		email: 'receiver@example.com',
+		attributes: { name: 'Receiver' }
+	}],
+	subject: 'The Mailgems Ruby SDK is awesome!',
+	content: 'Hi {{name}}, It is really easy to send an email!'
+}
 
 # Send your mail through the client
 mg_client.send_mail mail_params
