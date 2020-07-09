@@ -49,7 +49,7 @@ mg_client.send_mail mail_params
 ```ruby
 Mailgems.configure do |config|
 	config.api_key = 'your-api-key'
-  config.sandbox = false
+	config.sandbox = false
 end
 ```
 
@@ -57,7 +57,7 @@ Or have the initializer read your environment setting if you prefer.
 
 To use as the ActionMailer delivery method, add this to your `config/environments/whatever.rb`:
 ```ruby
-  config.action_mailer.delivery_method = :mailgems
+	config.action_mailer.delivery_method = :mailgems
 ```
 
 To specify Mailgems options such as template (body) or merge_data:
