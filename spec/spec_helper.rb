@@ -3,6 +3,8 @@ require "mailgems"
 require 'webmock/rspec'
 require "mail"
 require "pry"
+require 'coveralls'
+Coveralls.wear!
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
