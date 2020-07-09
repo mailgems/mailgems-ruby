@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mailgems/mailgems-ruby.svg?branch=master)](https://travis-ci.com/mailgems/mailgems-ruby)
+
 # Mailgems
 
 This library allows you to quickly and easily use the Mailgems API v1 via Ruby. It is also an Action Mailer adapter for using [Mailgems](https://www.mailgems.com) in Rails apps. It uses the [Mailgems HTTP API](https://mailgems.docs.apiary.io/) internally.
