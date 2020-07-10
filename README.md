@@ -25,10 +25,10 @@ Or install it yourself as:
 Here's how to send a message using the library:
 
 ```ruby
-require 'mailguns'
+require 'mailgems'
 
 # First, instantiate the Mailgems Mail with your API key
-mg_client = Mailgun::Mail.new(api_key: 'your-api-key')
+mg_client = Mailgems::Mail.new(api_key: 'your-api-key')
 
 # Define your mail parameters
 mail_params = {
