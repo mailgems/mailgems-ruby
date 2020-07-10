@@ -45,6 +45,8 @@ module Mailgems
     end
 
     def subject
+      return nil if content.nil? && !(template.nil? || template.empty?)
+
       mail.subject
     end
 
