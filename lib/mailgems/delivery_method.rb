@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'digest/sha1'
+require 'launchy'
 
 module Mailgems
   class DeliveryMethod
@@ -9,6 +10,7 @@ module Mailgems
     attr_accessor :settings
 
     def initialize(options = {})
+      options[:host] = "https://www.mailgems.com"
       options[:api_key] ||= Mailgems.configuration.api_key
       options[:sandbox] ||= Mailgems.configuration.sandbox
 
@@ -20,6 +22,7 @@ module Mailgems
     def deliver!(mail)
       validate_mail!(mail)
       Message.new(mail, settings).send
+      Launchy.open("#{settings[:host]}/sandbox") if settings[:sandbox]
     end
 
     private
